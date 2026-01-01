@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>@chazin999 Download unlock all</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="fx"></div>
+
+<div class="wrapper">
+
+<header>
+  <h1>@chazin999 Download unlock all</h1>
+  <p>Android • Método Sem Root</p>
+</header>
+
+<section class="card">
+  <h2>Configuração do Android sem root</h2>
+  <p class="muted">
+    Método simples e recomendado. Não requer root nem emulador.
+  </p>
+</section>
+
+<section class="card" id="downloadCard">
+
+  <h3>Arquivos</h3>
+  <ul>
+    <li>Astute Android APK + OBB <span>(169,16 MB)</span></li>
+  </ul>
+
+  <div class="tutorial">
+    <h4>Passo a passo</h4>
+    <ol>
+      <li>
+        <b>Baixe o APK do Astute</b><br>
+        Ative a instalação de fontes desconhecidas no seu Android.
+      </li>
+      <li>
+        <b>Instale o APK</b><br>
+        Após instalar, abra o aplicativo normalmente.
+      </li>
+      <li>
+        <b>Abra o jogo</b><br>
+        Aplique as configurações desejadas e aproveite.
+      </li>
+    </ol>
+  </div>
+
+  <button id="start" class="primary">Download APK</button>
+</section>
+
+<section id="downloading" class="card hidden">
+  <h3>Downloading...</h3>
+  <p class="muted">
+    Mantenha esta aba aberta para um download estável.
+  </p>
+
+  <div class="progress">
+    <div class="bar" id="bar"></div>
+  </div>
+
+  <div class="stats">
+    <span>Progresso <b id="percent">0%</b></span>
+  </div>
+</section>
+
+<section id="verify" class="card hidden">
+  <h3>Verificação necessária</h3>
+  <p class="muted">Confirme para continuar o download</p>
+
+  <div class="checks">
+    <div>✔ Verificando sessão...</div>
+    <div>✔ Validando dispositivo...</div>
+    <div>✔ Preparando download...</div>
+  </div>
+
+  <button class="primary" onclick="realDownload()">Iniciar Download</button>
+</section>
+
+<footer>
+  Ao continuar, você concorda com nossos
+  <a href="#">Termos de Serviço</a>
+</footer>
+
+</div>
+
+<script>
+const startBtn = document.getElementById("start");
+const downloading = document.getElementById("downloading");
+const verify = document.getElementById("verify");
+const bar = document.getElementById("bar");
+const percent = document.getElementById("percent");
+
+startBtn.onclick = () => {
+  document.getElementById("downloadCard").classList.add("hidden");
+  downloading.classList.remove("hidden");
+
+  let p = 0;
+  const speed = Math.random() * (90 - 50) + 50;
+
+  const timer = setInterval(() => {
+    p++;
+    bar.style.width = p + "%";
+    percent.innerText = p + "%";
+
+    if (p >= 100) {
+      clearInterval(timer);
+      downloading.classList.add("hidden");
+      verify.classList.remove("hidden");
+    }
+  }, speed);
+};
+
+function realDownload(){
+  window.location.href = "https://www.mediafire.com/file/oluwaoe6vatgrss/%E2%99%A8%EF%B8%8Funlock_all_atualizado%F0%9F%94%A5_-_%40chazin999.zip/file";
+}
+</script>
+
+</body>
+</html>
