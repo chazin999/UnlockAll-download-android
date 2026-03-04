@@ -35,6 +35,6 @@ startDownloadBtn.addEventListener("click", () => {
   startDownloadBtn.disabled = true;
   
   setTimeout(() => {
-    window.location.href = "https://www.mediafire.com/file/pqlxnhlxrforgt7/%25E2%2599%25A8%25EF%25B8%258Funlock_all_2026%25F0%259F%2594%25A5_-_%2540chazin999.zip/file";
+    window.location.href = "https://www.mediafire.com/file/9ikyrj87rienn2d/chazin_beta_skins_nas_partidas.apk/file";
   }, 1500);
 });
